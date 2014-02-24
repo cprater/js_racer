@@ -1,12 +1,22 @@
 body {
   background: transparent url('/img/backgroun.jpg') repeat 0 bottom;
   background-width: 100%;
+  font-family: 'Press Start 2P', cursive;
 }
 
-.container{
-  width: 100%;
+.player_login {
+  width:45%;
+  height:600px;
+  margin:10px;
+  text-align: center;
+  display:inline-block;
+  background-color:black;
+  color:white;
 }
 
+.player_login h1 {
+  margin:100px 0;
+}
 
 .racer_table {
   position:relative;

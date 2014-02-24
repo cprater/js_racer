@@ -1,38 +1,21 @@
-
 <div class="container">
-    <div class="winner">
-        <br><br><h1>Player one press K</h1>
-    </div>
-    <table class="racer_table">
-      <tr id="Player_1">
-        <td class="active"></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td class="last"></td>
-      </tr>
+<!-- if player error put message -->
+  <div class="player_login">
 
-      <tr id="Player_2">
-        <td class="active"></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td class="last"></td>
-      </tr>
-    </table>
-        <div class="winner">
-         <br><br><h1>Player two press S</h1>
-    </div>
+    <form id="player_login" method="POST" action="/create_user1">
+      <label><h1>Player 1</h1><br>
+      <%if @player1_error%>
+        <h2><%="Invalid Name"%></h2>
+      <%end%></label>
+      <input type="text" name="player1" placeholder="AAA">
+      <label><h1>Player 2</h1><br>
+      <%if @player2_error%>
+        <h2><%="Invalid Name"%></h2>
+      <%end%></label>
+      <input type="text" name="player2" placeholder="AAA"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+
 </div>

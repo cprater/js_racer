@@ -1,7 +1,24 @@
 $(document).ready(function() {
 
+    // $('#player_1_login').on('submit', function(event) {
+    //     event.preventDefault();
+
+    //     var url = $(this).attr('action');
+    //     var data = $(this).serialize();
+
+    //     $.post(url, data, function(serverResponse) {
+
+    //     })
+    });
+
+
+
+
+
+
+
+    ///GAMEPLAY FUNCTIONS==========================================
     function endGame(player) {
-        // console.log($(player).find('.active').is(':last-child'))
         return $(player).find('.active').is(':last-child')
     }
 
@@ -21,7 +38,6 @@ $(document).ready(function() {
         } else
             $(player).find('.active').removeClass('active').next().addClass('active');
     }
-
 
     $(document).on("keyup", function(event) {
         var keycode = event.keyCode

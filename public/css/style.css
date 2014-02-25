@@ -1,17 +1,34 @@
+/** {
+  border: 1px solid red;
+}*/
+
+
 body {
   background: transparent url('/img/backgroun.jpg') repeat 0 bottom;
   background-width: 100%;
   font-family: 'Press Start 2P', cursive;
 }
 
+.container {
+  height: 100%;
+}
+
 .player_login {
+  /*position: relative;*/
   width:45%;
-  height:600px;
-  margin:10px;
+  border: 5px solid gray;
+  height: 60%;
+  margin:0 auto;
   text-align: center;
-  display:inline-block;
+  display:block;
   background-color:black;
   color:white;
+  padding: 20px 0;
+}
+
+.player_login .button {
+  background-color: gray;
+  border: 1px solid gray;
 }
 
 .player_login h1 {

@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
 
-  has_many :games
+  has_and_belongs_to_many :games
 
   validates_uniqueness_of :name
   validates :name, presence: true
